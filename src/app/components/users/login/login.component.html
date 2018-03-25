@@ -1,0 +1,27 @@
+<form class="form-signin" (submit)="onSubmitLogin()">
+    
+    <h1 class="h3 mb-3 font-weight-normal">LOGIN</h1>
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input type="email" name="email" id="inputEmail" [(ngModel)]="email" class="form-control" placeholder="Email address" required autofocus>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" name="password" id="inputPassword" [(ngModel)]="password" class="form-control" placeholder="Password" required>
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+  
+    <button class="btn btn-lg btn-primary btn-snouk btn-block ntn-gl" type="submit">Sign in</button>
+    
+  </form>
+  <div class="row">
+      <div class="col-md-6 mx-auto mt-2">
+        <div class="card">
+          <div class="card-body d-flex justify-content-around">
+              
+              <button class="btn btn-lg btn-primary btn-facebook" (click)="onClickFacebookLogin()"><i class="fa fa-facebook"></i></button>
+              <button class="btn btn-lg btn-primary btn-google" (click)="onClickGoogleLogin()"><i class="fa fa-google"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>

@@ -5,12 +5,13 @@
 
 export const environment = {
   production: false,
+  //get key from firebase
   firebaseConfig: {
-    apiKey: "AIzaSyAA1TxBlIyKqhxAMJKq8xnaCP7y3EWwKZY",
-    authDomain: "waycation-02.firebaseapp.com",
-    databaseURL: "https://waycation-02.firebaseio.com",
-    projectId: "waycation-02",
-    storageBucket: "waycation-02.appspot.com",
-    messagingSenderId: "10549799205"
+    apiKey: 'AIzaSyCSNV4Y4RmoMm4L-eQLu2Exid_CrPHw1L8',
+    authDomain: 'myapp2018-a56e1.firebaseapp.com',
+    databaseURL: 'https://myapp2018-a56e1.firebaseio.com',
+    projectId: 'myapp2018-a56e1',
+    storageBucket: 'myapp2018-a56e1.appspot.com',
+    messagingSenderId: '572111332766'
   }
 };

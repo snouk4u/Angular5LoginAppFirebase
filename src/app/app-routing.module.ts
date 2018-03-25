@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
-import { HomePageComponent } from './componentest/home-page/home-page.component';
-import { LoginPageComponent } from './componentest/login-page/login-page.component';
-import { RegisterPageComponent } from './componentest/register-page/register-page.component';
-import { NotFoundPageComponent } from './componentest/not-found-page/not-found-page.component';
+import { HomeComponent } from './components/home/home.component';
+import { ProductsComponent } from './components/products/products.component';
+import { ProductComponent } from './components/products/product/product.component';
+import { ProductListComponent } from './components/products/product-list/product-list.component';
+import { UsersComponent } from './components/users/users.component';
 import { AuthGuard } from './guards/auth.guard';
-import { AdminPageComponent } from './componentest/admin-page/admin-page.component';
+import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
 
 const routes: Routes = [
-  {path:'', component: HomePageComponent},
-  {path:'login', component: LoginPageComponent},
-  {path:'register', component: RegisterPageComponent},
-  {path:'admin', component: AdminPageComponent, canActivate: [AuthGuard]},
+  {path:'', component: HomeComponent},
+  {path:'products', component: ProductsComponent, canActivate: [AuthGuard]},
+  {path: 'users', component: UsersComponent},
   {path:'**', component: NotFoundPageComponent},
+  
 ];
 
 @NgModule({
